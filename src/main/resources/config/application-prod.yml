@@ -49,7 +49,7 @@ spring:
           destination: topic-jhipster
   data:
     mongodb:
-      uri: mongodb://localhost:27017
+      uri: mongodb://localhost:27037
       database: PlantyComparePurchasingPowerService
   mail:
     host: localhost

@@ -3,7 +3,7 @@ services:
   plantycomparepurchasingpowerservice-mongodb:
     image: mongo:4.0.9
     ports:
-      - '27017:27017'
+      - '27037:27017'
     command: mongos --configdb plantycomparepurchasingpowerservice-mongodb-config
   plantycomparepurchasingpowerservice-mongodb-node:
     build:

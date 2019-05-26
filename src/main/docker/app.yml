@@ -10,27 +10,28 @@ services:
       - SPRING_CLOUD_CONFIG_URI=http://admin:$${jhipster.registry.password}@jhipster-registry:8761/config
       - SPRING_DATA_MONGODB_URI=mongodb://plantycomparepurchasingpowerservice-mongodb:27017
       - SPRING_DATA_MONGODB_DATABASE=PlantyComparePurchasingPowerService
-      - JHIPSTER_SLEEP=30 # gives time for the JHipster Registry to boot before the application
+      #- JHIPSTER_SLEEP=30 # gives time for the JHipster Registry to boot before the application
+      - JHIPSTER_SLEEP=5
       - SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS=kafka
       - SPRING_CLOUD_STREAM_KAFKA_BINDER_ZK_NODES=zookeeper
   plantycomparepurchasingpowerservice-mongodb:
     extends:
       file: mongodb.yml
       service: plantycomparepurchasingpowerservice-mongodb
-  kafka:
-    extends:
-      file: kafka.yml
-      service: kafka
-    environment:
-      - KAFKA_ADVERTISED_HOST_NAME=kafka
-  zookeeper:
-    extends:
-      file: kafka.yml
-      service: zookeeper
-  jhipster-registry:
-    extends:
-      file: jhipster-registry.yml
-      service: jhipster-registry
-    environment:
-      - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_TYPE=native
-      - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_SEARCH_LOCATIONS=file:./central-config/docker-config/
+#  kafka:
+#    extends:
+#      file: kafka.yml
+#      service: kafka
+#    environment:
+#      - KAFKA_ADVERTISED_HOST_NAME=kafka
+#  zookeeper:
+#    extends:
+#      file: kafka.yml
+#      service: zookeeper
+#  jhipster-registry:
+#    extends:
+#      file: jhipster-registry.yml
+#      service: jhipster-registry
+#    environment:
+#      - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_TYPE=native
+#      - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_SEARCH_LOCATIONS=file:./central-config/docker-config/
