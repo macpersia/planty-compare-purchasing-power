@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "be.planty.compare.purchasingpower",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.0.1",
+    "applicationType": "microservice",
+    "baseName": "PlantyComparePurchasingPowerService",
+    "packageName": "be.planty.compare.purchasingpower",
+    "packageFolder": "be/planty/compare/purchasingpower",
+    "serverPort": "8082",
+    "authenticationType": "uaa",
+    "uaaBaseName": "PlantyCompareUaaServer",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "YmU0MzJhNGM3ODVmMDIxNjJjZTAyOTYzZTIzNGE0NGYxNDNhNTY0N2Y1ZjFiYWIyOWQzNjc4YTJiNjAyYjYzOTQ2YzI2ZjM1N2QwODc5MTA0MTZiMzE5ZWEwZjNjZDA5MDk0ZDEzNTVjNjhiMmE3MWI5NDg5YWRmZjQwYjk1MTg=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
