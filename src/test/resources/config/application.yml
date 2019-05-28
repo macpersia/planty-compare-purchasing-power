@@ -17,12 +17,12 @@ eureka:
   client:
     enabled: false
   instance:
-    appname: PlantyComparePurchasingPowerService
-    instanceId: PlantyComparePurchasingPowerService:${spring.application.instance-id:${random.value}}
+    appname: PlantyComparePurchasingPower
+    instanceId: PlantyComparePurchasingPower:${spring.application.instance-id:${random.value}}
 
 spring:
   application:
-    name: PlantyComparePurchasingPowerService
+    name: PlantyComparePurchasingPower
   cloud:
     stream:
       kafka:
@@ -36,7 +36,7 @@ spring:
     mongodb:
       host: localhost
       port: 0
-      database: PlantyComparePurchasingPowerService
+      database: PlantyComparePurchasingPower
   mail:
     host: localhost
   main:
@@ -48,13 +48,13 @@ spring:
       enabled: false
   task:
     execution:
-      thread-name-prefix: planty-compare-purchasing-power-service-task-
+      thread-name-prefix: planty-compare-purchasing-power-task-
       pool:
         core-size: 1
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: planty-compare-purchasing-power-service-scheduling-
+      thread-name-prefix: planty-compare-purchasing-power-scheduling-
       pool:
         size: 1
   thymeleaf:
@@ -72,7 +72,7 @@ server:
 
 jhipster:
   clientApp:
-    name: 'plantyComparePurchasingPowerServiceApp'
+    name: 'plantyComparePurchasingPowerApp'
   logging:
     # To test json console appender
     use-json-format: true # By default, logs are in Json format
@@ -89,11 +89,6 @@ jhipster:
         base64-secret: YmU0MzJhNGM3ODVmMDIxNjJjZTAyOTYzZTIzNGE0NGYxNDNhNTY0N2Y1ZjFiYWIyOWQzNjc4YTJiNjAyYjYzOTQ2YzI2ZjM1N2QwODc5MTA0MTZiMzE5ZWEwZjNjZDA5MDk0ZDEzNTVjNjhiMmE3MWI5NDg5YWRmZjQwYjk1MTg=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
-    client-authorization:
-      access-token-uri: http://plantycompareuaaserver/oauth/token
-      token-service-id: plantycompareuaaserver
-      client-id: internal
-      client-secret: internal
   metrics:
     logs: # Reports metrics in the logs
       enabled: true

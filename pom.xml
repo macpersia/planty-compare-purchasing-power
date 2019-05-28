@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>be.planty.compare.purchasingpower</groupId>
-    <artifactId>planty-compare-purchasing-power-service</artifactId>
+    <artifactId>planty-compare-purchasing-power</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Planty Compare Purchasing Power Service</name>
+    <name>Planty Compare Purchasing Power</name>
 
     <repositories>
         <!-- jhipster-needle-maven-repository -->
@@ -41,7 +41,6 @@
         <!-- The spring-boot version should match the one managed by
         https://mvnrepository.com/artifact/io.github.jhipster/jhipster-dependencies/${jhipster-dependencies.version} -->
         <spring-boot.version>2.1.4.RELEASE</spring-boot.version>
-        <jaxb-runtime.version>2.3.2</jaxb-runtime.version>
         <mapstruct.version>1.3.0.Final</mapstruct.version>
 
         <!-- Plugin versions -->
@@ -258,17 +257,17 @@
             <artifactId>problem-spring-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.security.oauth</groupId>
-            <artifactId>spring-security-oauth2</artifactId>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-api</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-jwt</artifactId>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-impl</artifactId>
+            <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>org.glassfish.jaxb</groupId>
-            <artifactId>jaxb-runtime</artifactId>
-            <version>${jaxb-runtime.version}</version>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-jackson</artifactId>
             <scope>runtime</scope>
         </dependency>
         <!-- Spring Cloud -->
@@ -295,10 +294,6 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-security</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -521,7 +516,7 @@
                             <image>adoptopenjdk/openjdk11:alpine-jre</image>
                         </from>
                         <to>
-                            <image>plantycomparepurchasingpowerservice:latest</image>
+                            <image>plantycomparepurchasingpower:latest</image>
                         </to>
                         <container>
                             <entrypoint>
@@ -703,7 +698,7 @@
                                 <validateSpec>true</validateSpec>
                                 <configOptions>
                                     <delegatePattern>true</delegatePattern>
-                                    <title>planty-compare-purchasing-power-service</title>
+                                    <title>planty-compare-purchasing-power</title>
                                 </configOptions>
                             </configuration>
                         </execution>

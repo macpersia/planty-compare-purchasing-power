@@ -1,7 +1,7 @@
 {
-  "name": "planty-compare-purchasing-power-service",
+  "name": "planty-compare-purchasing-power",
   "version": "0.0.0",
-  "description": "Description for PlantyComparePurchasingPowerService",
+  "description": "Description for PlantyComparePurchasingPower",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [

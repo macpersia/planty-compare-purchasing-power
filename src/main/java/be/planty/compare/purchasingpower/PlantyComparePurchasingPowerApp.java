@@ -1,6 +1,5 @@
 package be.planty.compare.purchasingpower;
 
-import be.planty.compare.purchasingpower.client.OAuth2InterceptedFeignConfiguration;
 import be.planty.compare.purchasingpower.config.ApplicationProperties;
 import be.planty.compare.purchasingpower.config.DefaultProfileUtil;
 
@@ -14,8 +13,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.FilterType;
 import org.springframework.core.env.Environment;
 
 import java.net.InetAddress;
@@ -23,24 +20,21 @@ import java.net.UnknownHostException;
 import java.util.Arrays;
 import java.util.Collection;
 
-@ComponentScan(
-    excludeFilters = @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = OAuth2InterceptedFeignConfiguration.class)
-)
 @SpringBootApplication
 @EnableConfigurationProperties({ApplicationProperties.class})
 @EnableDiscoveryClient
-public class PlantyComparePurchasingPowerServiceApp implements InitializingBean {
+public class PlantyComparePurchasingPowerApp implements InitializingBean {
 
-    private static final Logger log = LoggerFactory.getLogger(PlantyComparePurchasingPowerServiceApp.class);
+    private static final Logger log = LoggerFactory.getLogger(PlantyComparePurchasingPowerApp.class);
 
     private final Environment env;
 
-    public PlantyComparePurchasingPowerServiceApp(Environment env) {
+    public PlantyComparePurchasingPowerApp(Environment env) {
         this.env = env;
     }
 
     /**
-     * Initializes PlantyComparePurchasingPowerService.
+     * Initializes PlantyComparePurchasingPower.
      * <p>
      * Spring profiles can be configured with a program argument --spring.profiles.active=your-active-profile
      * <p>
@@ -65,7 +59,7 @@ public class PlantyComparePurchasingPowerServiceApp implements InitializingBean 
      * @param args the command line arguments.
      */
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(PlantyComparePurchasingPowerServiceApp.class);
+        SpringApplication app = new SpringApplication(PlantyComparePurchasingPowerApp.class);
         DefaultProfileUtil.addDefaultProfile(app);
         Environment env = app.run(args).getEnvironment();
         logApplicationStartup(env);

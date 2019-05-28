@@ -1,16 +1,16 @@
 version: '2'
 services:
-  plantycomparepurchasingpowerservice-mongodb:
+  plantycomparepurchasingpower-mongodb:
     image: mongo:4.0.9
     ports:
       - '27037:27017'
-    command: mongos --configdb plantycomparepurchasingpowerservice-mongodb-config
-  plantycomparepurchasingpowerservice-mongodb-node:
+    command: mongos --configdb plantycomparepurchasingpower-mongodb-config
+  plantycomparepurchasingpower-mongodb-node:
     build:
       context: .
       dockerfile: mongodb/MongoDB.Dockerfile
     command: mongod --replSet rs1 --noprealloc --smallfiles
-  plantycomparepurchasingpowerservice-mongodb-config:
+  plantycomparepurchasingpower-mongodb-config:
     image: mongo:4.0.9
-    container_name: plantycomparepurchasingpowerservice-mongodb-config
+    container_name: plantycomparepurchasingpower-mongodb-config
     command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db
