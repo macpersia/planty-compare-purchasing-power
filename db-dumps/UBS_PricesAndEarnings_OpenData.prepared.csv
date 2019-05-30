@@ -1,0 +1,543 @@
+year,city,category,value
+2000,Abu Dhabi,G,48.1865284974093
+2000,Abu Dhabi,N,67.5213675213675
+2000,Amsterdam,G,89.119170984456
+2000,Amsterdam,N,84.9358974358974
+2000,Athens,G,51.8134715025907
+2000,Athens,N,56.6239316239316
+2000,Auckland,G,63.0051813471503
+2000,Auckland,N,69.9786324786325
+2000,Bangkok,G,20
+2000,Bangkok,N,25.8547008547009
+2000,Barcelona,G,68.2901554404145
+2000,Barcelona,N,79.4871794871795
+2000,Berlin,G,103.316062176166
+2000,Berlin,N,89.2094017094017
+2000,Bogotá,G,24.1450777202073
+2000,Bogotá,N,31.0897435897436
+2000,Brussels,G,105.077720207254
+2000,Brussels,N,82.2649572649573
+2000,Budapest,G,14.8186528497409
+2000,Budapest,N,14.8504273504274
+2000,Buenos Aires,G,43.419689119171
+2000,Buenos Aires,N,50
+2000,Caracas,G,15.7512953367876
+2000,Caracas,N,21.0470085470085
+2000,Chicago,G,93.5751295336788
+2000,Chicago,N,99.2521367521368
+2000,Copenhagen,G,103.316062176166
+2000,Copenhagen,N,80.0213675213675
+2000,Dublin,G,82.9015544041451
+2000,Dublin,N,89.2094017094017
+2000,Frankfurt,G,97.9274611398964
+2000,Frankfurt,N,86.431623931624
+2000,Geneva,G,106.528497409326
+2000,Geneva,N,102.029914529915
+2000,Helsinki,G,67.8756476683938
+2000,Helsinki,N,66.025641025641
+2000,Hong Kong,G,53.7823834196891
+2000,Hong Kong,N,69.3376068376069
+2000,Houston,G,102.279792746114
+2000,Houston,N,109.508547008547
+2000,Istanbul,G,29.8445595854922
+2000,Istanbul,N,32.0512820512821
+2000,Jakarta,G,8.18652849740933
+2000,Jakarta,N,10.042735042735
+2000,Johannesburg,G,57.3056994818653
+2000,Johannesburg,N,59.6153846153846
+2000,Kuala Lumpur,G,38.7564766839378
+2000,Kuala Lumpur,N,40.3846153846154
+2000,Lisbon,G,49.6373056994819
+2000,Lisbon,N,55.3418803418804
+2000,London,G,70.0518134715026
+2000,London,N,75.2136752136752
+2000,Los Angeles,G,102.487046632124
+2000,Los Angeles,N,105.021367521368
+2000,Luxembourg,G,104.559585492228
+2000,Luxembourg,N,115.17094017094
+2000,Madrid,G,69.3264248704663
+2000,Madrid,N,79.9145299145299
+2000,Manama,G,39.3782383419689
+2000,Manama,N,51.6025641025641
+2000,Manila,G,13.4715025906736
+2000,Manila,N,16.2393162393162
+2000,Mexico City,G,17.6165803108808
+2000,Mexico City,N,22.2222222222222
+2000,Milan,G,72.020725388601
+2000,Milan,N,66.9871794871795
+2000,Montreal,G,104.974093264249
+2000,Montreal,N,94.6581196581197
+2000,Moscow,G,9.22279792746114
+2000,Moscow,N,10.5769230769231
+2000,Mumbai,G,13.4715025906736
+2000,Mumbai,N,16.2393162393162
+2000,Nairobi,G,6.21761658031088
+2000,Nairobi,N,7.58547008547009
+2000,New York,G,100
+2000,New York,N,100
+2000,Nicosia,G,72.8497409326425
+2000,Nicosia,N,84.4017094017094
+2000,Oslo,G,75.440414507772
+2000,Oslo,N,69.1239316239316
+2000,Panama,G,27.6683937823834
+2000,Panama,N,33.2264957264957
+2000,Paris,G,72.4352331606218
+2000,Paris,N,75.7478632478633
+2000,Rio de Janeiro,G,28.9119170984456
+2000,Rio de Janeiro,N,34.4017094017094
+2000,Santiago de Chile,G,35.7512953367876
+2000,Santiago de Chile,N,40.2777777777778
+2000,São Paulo,G,32.3316062176166
+2000,São Paulo,N,38.2478632478632
+2000,Seoul,G,46.5284974093264
+2000,Seoul,N,48.5042735042735
+2000,Shanghai,G,10.1554404145078
+2000,Shanghai,N,10.8974358974359
+2000,Stockholm,G,68.0829015544042
+2000,Stockholm,N,64.2094017094017
+2000,Sydney,G,74.6113989637306
+2000,Sydney,N,80.1282051282051
+2000,Taipei,G,46.839378238342
+2000,Taipei,N,55.1282051282051
+2000,Tel Aviv,G,56.2694300518135
+2000,Tel Aviv,N,60.2564102564103
+2000,Tokyo,G,80.9326424870466
+2000,Tokyo,N,92.0940170940171
+2000,Toronto,G,88.6010362694301
+2000,Toronto,N,87.0726495726496
+2000,Vienna,G,81.8652849740933
+2000,Vienna,N,80.7692307692308
+2000,Warsaw,G,23.9378238341969
+2000,Warsaw,N,20.6196581196581
+2000,Zurich,G,103.626943005181
+2000,Zurich,N,106.837606837607
+2003,Amsterdam,N,85.8
+2003,Athens,N,59.2
+2003,Auckland,N,80.6
+2003,Bangkok,N,27.2
+2003,Barcelona,N,78.3
+2003,Basel,N,124.3
+2003,Berlin,N,82.4
+2003,Bogotá,N,35
+2003,Bratislava,N,33.3
+2003,Brussels,N,81.8
+2003,Bucharest,N,39.8
+2003,Budapest,N,38.4
+2003,Buenos Aires,N,38.9
+2003,Caracas,N,31.3
+2003,Chicago,N,106.5
+2003,Copenhagen,N,86.6
+2003,Dubai,N,80
+2003,Dublin,N,97
+2003,Frankfurt,N,87.6
+2003,Geneva,N,120.7
+2003,Helsinki,N,77.9
+2003,Hong Kong,N,53.2
+2003,Istanbul,N,43.7
+2003,Jakarta,N,22.8
+2003,Johannesburg,N,58.3
+2003,Karachi,N,19.2
+2003,Kiev,N,24.4
+2003,Kuala Lumpur,N,55.6
+2003,Lagos,N,12
+2003,Lima,N,36.3
+2003,Lisbon,N,47.8
+2003,Ljubljana,N,39.8
+2003,London,N,80.6
+2003,Los Angeles,N,119.1
+2003,Lugano,N,119.9
+2003,Luxembourg,N,112.3
+2003,Madrid,N,70.2
+2003,Manama,N,57.4
+2003,Manila,N,25.7
+2003,Mexico City,N,26.4
+2003,Miami,N,108.5
+2003,Milan,N,66.8
+2003,Montreal,N,91.6
+2003,Moscow,N,28.2
+2003,Mumbai,N,19.9
+2003,Nairobi,N,13.3
+2003,New York,N,100
+2003,Oslo,N,86.9
+2003,Paris,N,57.4
+2003,Prague,N,40.6
+2003,Riga,N,36.2
+2003,Rio de Janeiro,N,27.5
+2003,Rome,N,56.1
+2003,Santiago de Chile,N,51.5
+2003,São Paulo,N,37.6
+2003,Seoul,N,61.5
+2003,Shanghai,N,24.2
+2003,Sofia,N,26.9
+2003,Stockholm,N,76
+2003,Sydney,N,74.6
+2003,Taipei,N,74.4
+2003,Tallinn,N,19.8
+2003,Tel Aviv,N,64.5
+2003,Tokyo,N,94.8
+2003,Toronto,N,103.8
+2003,Vienna,N,72.7
+2003,Vilnius,N,29.7
+2003,Warsaw,N,29.4
+2003,Zurich,N,126.8
+2006,Amsterdam,N,75.3
+2006,Athens,N,60.7
+2006,Auckland,N,90.3
+2006,Bangkok,N,21.3
+2006,Barcelona,N,78
+2006,Beijing,N,23.8
+2006,Berlin,N,77.3
+2006,Bogotá,N,24.9
+2006,Bratislava,N,35.5
+2006,Brussels,N,80.1
+2006,Bucharest,N,24.2
+2006,Budapest,N,33.9
+2006,Buenos Aires,N,44.2
+2006,Caracas,N,28.2
+2006,Chicago,N,108
+2006,Copenhagen,N,79.2
+2006,Dubai,N,65.5
+2006,Dublin,N,99.9
+2006,Frankfurt,N,87.1
+2006,Geneva,N,107.1
+2006,Helsinki,N,78.4
+2006,Hong Kong,N,50.5
+2006,Istanbul,N,37
+2006,Jakarta,N,16.4
+2006,Johannesburg,N,63.6
+2006,Kiev,N,22.2
+2006,Kuala Lumpur,N,56.1
+2006,Lima,N,32.8
+2006,Lisbon,N,48.9
+2006,Ljubljana,N,41.2
+2006,London,N,84
+2006,Los Angeles,N,110.7
+2006,Luxembourg,N,89.1
+2006,Lyon,N,68.3
+2006,Madrid,N,75.2
+2006,Manama,N,56.3
+2006,Manila,N,18.3
+2006,Mexico City,N,28.4
+2006,Miami,N,84
+2006,Milan,N,67
+2006,Montreal,N,85.9
+2006,Moscow,N,34.4
+2006,Mumbai,N,26.5
+2006,Munich,N,86.2
+2006,Nairobi,N,24.6
+2006,New Delhi,N,20.3
+2006,New York,N,100
+2006,Nicosia,N,86.5
+2006,Oslo,N,81.6
+2006,Paris,N,58.4
+2006,Prague,N,46.3
+2006,Riga,N,27.4
+2006,Rio de Janeiro,N,30.4
+2006,Rome,N,59.5
+2006,Santiago de Chile,N,42.9
+2006,São Paulo,N,41.3
+2006,Seoul,N,65
+2006,Shanghai,N,26.7
+2006,Sofia,N,20.6
+2006,Stockholm,N,74.4
+2006,Sydney,N,88.5
+2006,Taipei,N,71
+2006,Tallinn,N,33.7
+2006,Tokyo,N,87.6
+2006,Toronto,N,87.4
+2006,Vienna,N,76.3
+2006,Vilnius,N,29.7
+2006,Warsaw,N,27.1
+2006,Zurich,N,114.1
+2009,Amsterdam,N,75.9
+2009,Athens,N,58.1
+2009,Auckland,N,68.9
+2009,Bangkok,N,26
+2009,Barcelona,N,66
+2009,Beijing,N,23.8
+2009,Berlin,N,77.6
+2009,Bogotá,N,33.7
+2009,Bratislava,N,37.1
+2009,Brussels,N,76.2
+2009,Bucharest,N,29.3
+2009,Budapest,N,28.3
+2009,Buenos Aires,N,34.4
+2009,Cairo,N,27.3
+2009,Caracas,N,23.3
+2009,Chicago,N,88.8
+2009,Copenhagen,N,73.1
+2009,Doha,N,48.5
+2009,Dubai,N,65.9
+2009,Dublin,N,96.9
+2009,Frankfurt,N,73.8
+2009,Geneva,N,93.9
+2009,Helsinki,N,78.2
+2009,Hong Kong,N,58.1
+2009,Istanbul,N,33.2
+2009,Jakarta,N,15.3
+2009,Johannesburg,N,53
+2009,Kiev,N,22.4
+2009,Kuala Lumpur,N,39.5
+2009,Lima,N,32.4
+2009,Lisbon,N,60
+2009,Ljubljana,N,53
+2009,London,N,76.9
+2009,Los Angeles,N,101
+2009,Luxembourg,N,96.4
+2009,Lyon,N,66.3
+2009,Madrid,N,65.9
+2009,Manama,N,60.2
+2009,Manila,N,18.4
+2009,Mexico City,N,23.6
+2009,Miami,N,101.8
+2009,Milan,N,69.5
+2009,Montreal,N,83.9
+2009,Moscow,N,49.4
+2009,Mumbai,N,21.8
+2009,Munich,N,72.4
+2009,Nairobi,N,17.5
+2009,New Delhi,N,23.3
+2009,New York,N,100
+2009,Nicosia,N,81.5
+2009,Oslo,N,66.8
+2009,Paris,N,61.3
+2009,Prague,N,43.4
+2009,Riga,N,32.8
+2009,Rio de Janeiro,N,36.2
+2009,Rome,N,49.4
+2009,Santiago de Chile,N,36
+2009,São Paulo,N,41.2
+2009,Seoul,N,57.4
+2009,Shanghai,N,24.7
+2009,Sofia,N,25.8
+2009,Stockholm,N,73.5
+2009,Sydney,N,95.9
+2009,Taipei,N,58.9
+2009,Tallinn,N,44.7
+2009,Tel Aviv,N,58.6
+2009,Tokyo,N,82.2
+2009,Toronto,N,80.4
+2009,Vienna,N,69.7
+2009,Vilnius,N,32.8
+2009,Warsaw,N,34
+2009,Zurich,N,106.9
+2012,Amsterdam,N,75.6
+2012,Athens,N,52.1
+2012,Auckland,N,74.8
+2012,Bangkok,N,33.7
+2012,Barcelona,N,66.8
+2012,Beijing,N,28.2
+2012,Berlin,N,82.2
+2012,Bogotá,N,37.8
+2012,Bratislava,N,45.7
+2012,Brussels,N,65.9
+2012,Bucharest,N,30.2
+2012,Budapest,N,29.3
+2012,Buenos Aires,N,41
+2012,Cairo,N,33
+2012,Caracas,N,22.9
+2012,Chicago,N,91.5
+2012,Copenhagen,N,75.3
+2012,Doha,N,50.2
+2012,Dubai,N,79.5
+2012,Dublin,N,82
+2012,Frankfurt,N,76.1
+2012,Geneva,N,98.8
+2012,Helsinki,N,71
+2012,Hong Kong,N,72.6
+2012,Istanbul,N,39.8
+2012,Jakarta,N,16.7
+2012,Johannesburg,N,67.6
+2012,Kiev,N,18.1
+2012,Kuala Lumpur,N,38.5
+2012,Lima,N,44.2
+2012,Lisbon,N,50.6
+2012,Ljubljana,N,43.8
+2012,London,N,73.1
+2012,Los Angeles,N,98.4
+2012,Luxembourg,N,86.9
+2012,Lyon,N,65.6
+2012,Madrid,N,68.5
+2012,Manama,N,66.4
+2012,Manila,N,19.7
+2012,Mexico City,N,33.1
+2012,Miami,N,97.7
+2012,Milan,N,61.8
+2012,Montreal,N,68.1
+2012,Moscow,N,44
+2012,Mumbai,N,28.9
+2012,Munich,N,77.1
+2012,Nairobi,N,21.2
+2012,New Delhi,N,25.9
+2012,New York,N,100
+2012,Nicosia,N,86.7
+2012,Oslo,N,71.2
+2012,Paris,N,66.4
+2012,Prague,N,40.8
+2012,Riga,N,34.4
+2012,Rio de Janeiro,N,40.7
+2012,Rome,N,53.7
+2012,Santiago de Chile,N,38.8
+2012,São Paulo,N,42
+2012,Seoul,N,78.2
+2012,Shanghai,N,36.6
+2012,Sofia,N,29.2
+2012,Stockholm,N,74
+2012,Sydney,N,104.5
+2012,Taipei,N,61.6
+2012,Tallinn,N,40.9
+2012,Tel Aviv,N,53.4
+2012,Tokyo,N,80.9
+2012,Toronto,N,80.5
+2012,Vienna,N,76.4
+2012,Vilnius,N,36.1
+2012,Warsaw,N,34
+2012,Zurich,N,110.6
+2015,Amsterdam,N,76.3
+2015,Athens,N,46.6
+2015,Auckland,N,89.4
+2015,Bangkok,N,39
+2015,Barcelona,N,69.4
+2015,Beijing,N,25
+2015,Berlin,N,97.6
+2015,Bogotá,N,42.9
+2015,Bratislava,N,51.7
+2015,Brussels,N,84.5
+2015,Bucharest,N,31.6
+2015,Budapest,N,34.7
+2015,Buenos Aires,N,38.4
+2015,Cairo,N,20.7
+2015,Chicago,N,111.2
+2015,Copenhagen,N,59.3
+2015,Doha,N,65.1
+2015,Dubai,N,78
+2015,Dublin,N,87.6
+2015,Frankfurt,N,97
+2015,Geneva,N,128.3
+2015,Helsinki,N,75.9
+2015,Hong Kong,N,99.3
+2015,Istanbul,N,44.3
+2015,Jakarta,N,14.6
+2015,Johannesburg,N,66
+2015,Kiev,N,15.8
+2015,Kuala Lumpur,N,40.7
+2015,Lima,N,38.4
+2015,Lisbon,N,54.5
+2015,Ljubljana,N,60.8
+2015,London,N,80.4
+2015,Los Angeles,N,121.1
+2015,Luxembourg,N,123.8
+2015,Lyon,N,85.5
+2015,Madrid,N,71.4
+2015,Manama,N,89.5
+2015,Manila,N,18.9
+2015,Mexico City,N,29.1
+2015,Miami,N,122.6
+2015,Milan,N,62.4
+2015,Montreal,N,99.1
+2015,Moscow,N,36.9
+2015,Mumbai,N,25
+2015,Munich,N,97.1
+2015,Nairobi,N,15.2
+2015,New Delhi,N,22.3
+2015,New York,N,100
+2015,Nicosia,N,107.2
+2015,Oslo,N,81.7
+2015,Paris,N,80.2
+2015,Prague,N,42.3
+2015,Riga,N,36.8
+2015,Rio de Janeiro,N,49.4
+2015,Rome,N,76
+2015,Santiago de Chile,N,53.6
+2015,São Paulo,N,64.4
+2015,Seoul,N,66.4
+2015,Shanghai,N,32.9
+2015,Sofia,N,30.5
+2015,Stockholm,N,79.4
+2015,Sydney,N,103.2
+2015,Taipei,N,66.7
+2015,Tallinn,N,41.8
+2015,Tel Aviv,N,72.6
+2015,Tokyo,N,89
+2015,Toronto,N,95.7
+2015,Vienna,N,96.8
+2015,Vilnius,N,38.7
+2015,Warsaw,N,43.7
+2015,Zurich,N,135.1
+2018,Los Angeles,N,123.9
+2018,Zurich,N,122.5
+2018,Miami,N,121.7
+2018,Geneva,N,118.0
+2018,Luxembourg,N,117.3
+2018,Chicago,N,105.8
+2018,Toronto,N,101.5
+2018,Manama,N,100.6
+2018,Hong Kong,N,100.3
+2018,New York,N,100.0
+2018,Munich,N,99.1
+2018,Frankfurt,N,97.6
+2018,Sydney,N,96.5
+2018,Dubai,N,92.0
+2018,Berlin,N,91.6
+2018,Vienna,N,90.9
+2018,Dublin,N,88.7
+2018,Montreal,N,87.3
+2018,Doha,N,85.0
+2018,Tokyo,N,84.8
+2018,Auckland,N,84.1
+2018,Stockholm,N,83.7
+2018,London,N,83.4
+2018,Riyadh,N,83.1
+2018,Nicosia,N,83.0
+2018,Taipei,N,83.0
+2018,Oslo,N,80.6
+2018,Tel Aviv,N,80.3
+2018,Lyon,N,77.9
+2018,Copenhagen,N,77.0
+2018,Helsinki,N,73.5
+2018,Amsterdam,N,73.5
+2018,Paris,N,65.8
+2018,Barcelona,N,65.8
+2018,Rome,N,65.0
+2018,Madrid,N,62.9
+2018,Milan,N,60.5
+2018,Seoul,N,58.5
+2018,Santiago de Chile,N,57.0
+2018,São Paulo,N,54.1
+2018,Brussels,N,53.7
+2018,Ljubljana,N,49.3
+2018,Johannesburg,N,48.8
+2018,Tallinn,N,47.0
+2018,Hanoi,N,46.8
+2018,Rio de Janeiro,N,46.0
+2018,Warsaw,N,45.9
+2018,Lisbon ,N,44.5
+2018,Kuala Lumpur,N,43.6
+2018,Bangkok,N,42.7
+2018,Panama,N,41.5
+2018,Vilnius,N,41.0
+2018,Athens,N,40.7
+2018,Prague,N,38.5
+2018,Lima,N,38.4
+2018,Sofia,N,37.0
+2018,Bogotá,N,36.7
+2018,Bratislava,N,36.0
+2018,Moscow,N,33.6
+2018,Manila,N,33.0
+2018,Shanghai,N,32.4
+2018,Beijing,N,32.0
+2018,Budapest,N,31.7
+2018,Riga,N,31.4
+2018,Buenos Aires,N,31.3
+2018,Istanbul,N,31.0
+2018,Bucharest,N,30.2
+2018,St Petersburg,N,27.3
+2018,Zagreb,N,26.9
+2018,Mexico City,N,26.4
+2018,Mumbai,N,25.1
+2018,Nairobi,N,24.0
+2018,New Delhi,N,23.1
+2018,Kiev,N,20.2
+2018,Jakarta,N,19.2
+2018,Cairo,N,16.9
+2018,Lagos,N,7.9
