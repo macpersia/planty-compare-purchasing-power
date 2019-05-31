@@ -1,9 +1,7 @@
 package be.planty.compare.purchasingpower.config;
 
-import be.planty.compare.purchasingpower.security.*;
-import be.planty.compare.purchasingpower.security.jwt.*;
-
-import org.springframework.context.annotation.Bean;
+import be.planty.compare.purchasingpower.security.jwt.JWTConfigurer;
+import be.planty.compare.purchasingpower.security.jwt.TokenProvider;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -13,6 +11,9 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.zalando.problem.spring.web.advice.security.SecurityProblemSupport;
+
+import static be.planty.compare.purchasingpower.security.AuthoritiesConstants.ADMIN;
+import static org.springframework.http.HttpMethod.GET;
 
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
@@ -54,11 +55,13 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         .and()
             .authorizeRequests()
             .antMatchers("/api/authenticate").permitAll()
+            .antMatchers(GET, "/api/purchasing-power").authenticated()
+            .antMatchers("/api/purchasing-power").hasAnyAuthority(ADMIN)
             .antMatchers("/api/**").authenticated()
             .antMatchers("/management/health").permitAll()
             .antMatchers("/management/info").permitAll()
             .antMatchers("/management/prometheus").permitAll()
-            .antMatchers("/management/**").hasAuthority(AuthoritiesConstants.ADMIN)
+            .antMatchers("/management/**").hasAuthority(ADMIN)
         .and()
             .apply(securityConfigurerAdapter());
         // @formatter:on
