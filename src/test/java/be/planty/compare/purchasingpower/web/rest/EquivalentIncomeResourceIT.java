@@ -1,9 +1,11 @@
 package be.planty.compare.purchasingpower.web.rest;
 
 import be.planty.compare.purchasingpower.PlantyComparePurchasingPowerApp;
+import be.planty.compare.purchasingpower.repository.PurchasingPowerRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockitoAnnotations;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
@@ -20,11 +22,14 @@ public class EquivalentIncomeResourceIT {
 
     private MockMvc restMockMvc;
 
+    @Autowired
+    private PurchasingPowerRepository purchasingPowerRepository;
+
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.initMocks(this);
 
-        EquivalentIncomeResource equivalentIncomeResource = new EquivalentIncomeResource();
+        EquivalentIncomeResource equivalentIncomeResource = new EquivalentIncomeResource(purchasingPowerRepository);
         restMockMvc = MockMvcBuilders
             .standaloneSetup(equivalentIncomeResource)
             .build();
