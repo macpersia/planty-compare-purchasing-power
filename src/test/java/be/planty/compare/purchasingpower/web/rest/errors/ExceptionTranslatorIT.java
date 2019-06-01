@@ -1,6 +1,7 @@
 package be.planty.compare.purchasingpower.web.rest.errors;
 
 import be.planty.compare.purchasingpower.PlantyComparePurchasingPowerApp;
+import be.planty.compare.purchasingpower.config.SecurityBeanOverrideConfiguration;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests {@link ExceptionTranslator} controller advice.
  */
-@SpringBootTest(classes = PlantyComparePurchasingPowerApp.class)
+@SpringBootTest(classes = {SecurityBeanOverrideConfiguration.class, PlantyComparePurchasingPowerApp.class})
 public class ExceptionTranslatorIT {
 
     @Autowired

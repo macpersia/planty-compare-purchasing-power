@@ -16,5 +16,6 @@ import java.util.concurrent.CompletableFuture;
 public interface PurchasingPowerRepository extends MongoRepository<PurchasingPower, String> {
 
     @Async
-    CompletableFuture<PurchasingPower> findFirstByCategoryAndCityOrderByYearDesc(String category, String city);
+    CompletableFuture<PurchasingPower> 
+        findFirstByCategoryAndCityOrderByYearDesc(String category, String city);
 }

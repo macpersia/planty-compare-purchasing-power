@@ -1,5 +1,6 @@
 package be.planty.compare.purchasingpower;
 
+import be.planty.compare.purchasingpower.client.OAuth2InterceptedFeignConfiguration;
 import be.planty.compare.purchasingpower.config.ApplicationProperties;
 import be.planty.compare.purchasingpower.config.DefaultProfileUtil;
 
@@ -13,6 +14,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.FilterType;
 import org.springframework.core.env.Environment;
 
 import java.net.InetAddress;
@@ -20,6 +23,9 @@ import java.net.UnknownHostException;
 import java.util.Arrays;
 import java.util.Collection;
 
+@ComponentScan(
+    excludeFilters = @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = OAuth2InterceptedFeignConfiguration.class)
+)
 @SpringBootApplication
 @EnableConfigurationProperties({ApplicationProperties.class})
 @EnableDiscoveryClient

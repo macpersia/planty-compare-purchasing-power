@@ -86,9 +86,14 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
-        base64-secret: YmU0MzJhNGM3ODVmMDIxNjJjZTAyOTYzZTIzNGE0NGYxNDNhNTY0N2Y1ZjFiYWIyOWQzNjc4YTJiNjAyYjYzOTQ2YzI2ZjM1N2QwODc5MTA0MTZiMzE5ZWEwZjNjZDA5MDk0ZDEzNTVjNjhiMmE3MWI5NDg5YWRmZjQwYjk1MTg=
+        base64-secret: MjQwN2Q0NGQ0NWI3ODFlMDJiYWE5MWM5YThkZmJkYmFiMWFhNTEyODE0YTI1NWQ5MmUyYTliMGM3ZjE2Zjc5ODhkYTFlMjQwYTkxNGE3MWJkOWI2NDYxZTJiMzE2MDc0NzdlMWExZTM0MDM5MzMzYzExNDIwNjEzMzUwMDQ2MzE=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
+    client-authorization:
+      access-token-uri: http://plantycompareuaaserver/oauth/token
+      token-service-id: plantycompareuaaserver
+      client-id: internal
+      client-secret: internal
   metrics:
     logs: # Reports metrics in the logs
       enabled: true

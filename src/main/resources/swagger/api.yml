@@ -5,13 +5,3 @@ info:
   title: 'PlantyComparePurchasingPower'
   version: 0.0.1
 paths: {}
-
-components:
-  securitySchemes:
-    jwt:
-      type: http
-      description: JWT Authentication
-      scheme: bearer
-      bearerFormat: JWT
-security:
-  - jwt: []
