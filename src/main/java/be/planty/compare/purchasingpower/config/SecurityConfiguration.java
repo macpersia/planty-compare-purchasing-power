@@ -1,9 +1,7 @@
 package be.planty.compare.purchasingpower.config;
 
-import be.planty.compare.purchasingpower.config.oauth2.OAuth2JwtAccessTokenConverter;
-import be.planty.compare.purchasingpower.config.oauth2.OAuth2Properties;
-import be.planty.compare.purchasingpower.security.oauth2.OAuth2SignatureVerifierClient;
-import be.planty.compare.purchasingpower.security.AuthoritiesConstants;
+import static be.planty.compare.purchasingpower.security.AuthoritiesConstants.ADMIN;
+import static org.springframework.http.HttpMethod.GET;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.client.loadbalancer.RestTemplateCustomizer;
@@ -17,11 +15,11 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.R
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
-import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 import org.springframework.web.client.RestTemplate;
 
-import static be.planty.compare.purchasingpower.security.AuthoritiesConstants.ADMIN;
-import static org.springframework.http.HttpMethod.GET;
+import be.planty.compare.purchasingpower.config.oauth2.OAuth2JwtAccessTokenConverter;
+import be.planty.compare.purchasingpower.config.oauth2.OAuth2Properties;
+import be.planty.compare.purchasingpower.security.oauth2.OAuth2SignatureVerifierClient;
 
 @Configuration
 @EnableResourceServer
@@ -47,6 +45,7 @@ public class SecurityConfiguration extends ResourceServerConfigurerAdapter {
         .and()
             .authorizeRequests()
             .antMatchers("/api/authenticate").permitAll()
+            .antMatchers(GET, "/api/equivalent-income").permitAll()
             .antMatchers(GET, "/api/purchasing-power").authenticated()
             .antMatchers("/api/purchasing-power").hasAnyAuthority(ADMIN)
             .antMatchers("/api/**").authenticated()
