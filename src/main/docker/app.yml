@@ -33,10 +33,14 @@ services:
 #      service: kafka
 #    environment:
 #      - KAFKA_ADVERTISED_HOST_NAME=kafka
+#    # Added by Hadi
+#    mem_limit: 512m
 #  zookeeper:
 #    extends:
 #      file: kafka.yml
 #      service: zookeeper
+#    # Added by Hadi
+#    mem_limit: 256m
 #  jhipster-registry:
 #    extends:
 #      file: jhipster-registry.yml
@@ -46,4 +50,3 @@ services:
 #      - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_SEARCH_LOCATIONS=file:./central-config/docker-config/
 #    # Added by Hadi
 #    mem_limit: 512m
-
