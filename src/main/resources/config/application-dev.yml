@@ -45,7 +45,9 @@ spring:
     stream:
       kafka:
         binder:
+          ## Changed by Hadi
           brokers: localhost
+          #brokers: kafka
           zk-nodes: localhost
       bindings:
         output:
