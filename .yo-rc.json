@@ -19,7 +19,7 @@
     "devDatabaseType": "mongodb",
     "prodDatabaseType": "mongodb",
     "searchEngine": false,
-    "messageBroker": "kafka",
+    "messageBroker": false,
     "serviceDiscoveryType": "eureka",
     "buildTool": "maven",
     "enableSwaggerCodegen": true,
