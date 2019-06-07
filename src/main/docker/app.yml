@@ -10,8 +10,6 @@ services:
       #- SPRING_PROFILES_ACTIVE=prod,swagger
       - SPRING_PROFILES_ACTIVE=dev,swagger
       - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
-      - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://admin:$${jhipster.registry.password}@jhipster-registry:8761/eureka
-      - SPRING_CLOUD_CONFIG_URI=http://admin:$${jhipster.registry.password}@jhipster-registry:8761/config
       - SPRING_DATA_MONGODB_URI=mongodb://plantycomparepurchasingpower-mongodb:27017
       - SPRING_DATA_MONGODB_DATABASE=PlantyComparePurchasingPower
       # Changed by Hadi
@@ -25,12 +23,3 @@ services:
       service: plantycomparepurchasingpower-mongodb
     # Added by Hadi
     mem_limit: 64m
-  jhipster-registry:
-    extends:
-      file: jhipster-registry.yml
-      service: jhipster-registry
-    environment:
-      - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_TYPE=native
-      - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_SEARCH_LOCATIONS=file:./central-config/docker-config/
-    # Added by Hadi
-    mem_limit: 512m

@@ -2,7 +2,6 @@ package be.planty.compare.purchasingpower.config;
 
 import java.net.InetSocketAddress;
 import java.util.Iterator;
-import java.util.Optional;
 
 import io.github.jhipster.config.JHipsterProperties;
 
@@ -36,12 +35,9 @@ import net.logstash.logback.stacktrace.ShortenedThrowableConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.info.BuildProperties;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@RefreshScope
 public class LoggingConfiguration {
 
     private static final String CONSOLE_APPENDER_NAME = "CONSOLE";
@@ -58,15 +54,12 @@ public class LoggingConfiguration {
 
     private final String serverPort;
 
-    private final String version;
-
     private final JHipsterProperties jHipsterProperties;
 
     public LoggingConfiguration(@Value("${spring.application.name}") String appName, @Value("${server.port}") String serverPort,
-         Optional<BuildProperties> buildProperties, JHipsterProperties jHipsterProperties) {
+         JHipsterProperties jHipsterProperties) {
         this.appName = appName;
         this.serverPort = serverPort;
-        this.version = buildProperties.isPresent() ? buildProperties.get().getVersion() : "";
         this.jHipsterProperties = jHipsterProperties;
         if (this.jHipsterProperties.getLogging().isUseJsonFormat()) {
             addJsonConsoleAppender(context);
@@ -161,7 +154,6 @@ public class LoggingConfiguration {
         customFields.append("{");
         customFields.append("\"app_name\":\"").append(this.appName).append("\"");
         customFields.append(",").append("\"app_port\":\"").append(this.serverPort).append("\"");
-        customFields.append(",").append("\"version\":\"").append(this.version).append("\"");
         customFields.append("}");
         return customFields.toString();
     }

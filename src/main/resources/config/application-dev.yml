@@ -19,13 +19,6 @@ logging:
     io.github.jhipster: DEBUG
     be.planty.compare.purchasingpower: DEBUG
 
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    service-url:
-      defaultZone: http://admin:${jhipster.registry.password}@localhost:8761/eureka/
-
 spring:
   profiles:
     active: dev
@@ -92,11 +85,13 @@ jhipster:
   #     allow-credentials: true
   #     max-age: 1800
   security:
-    client-authorization:
-      access-token-uri: http://plantycompareuaaserver/oauth/token
-      token-service-id: plantycompareuaaserver
-      client-id: internal
-      client-secret: internal
+    authentication:
+      jwt:
+        # This token must be encoded using Base64 and be at least 256 bits long (you can type `openssl rand -base64 64` on your command line to generate a 512 bits one)
+        base64-secret: MjQwN2Q0NGQ0NWI3ODFlMDJiYWE5MWM5YThkZmJkYmFiMWFhNTEyODE0YTI1NWQ5MmUyYTliMGM3ZjE2Zjc5ODhkYTFlMjQwYTkxNGE3MWJkOWI2NDYxZTJiMzE2MDc0NzdlMWExZTM0MDM5MzMzYzExNDIwNjEzMzUwMDQ2MzE=
+        # Token is valid 24 hours
+        token-validity-in-seconds: 86400
+        token-validity-in-seconds-for-remember-me: 2592000
   mail: # specific JHipster mail property, for standard properties see MailProperties
     from: PlantyComparePurchasingPower@localhost
     base-url: http://127.0.0.1:8081
@@ -111,17 +106,6 @@ jhipster:
       host: localhost
       port: 5000
       queue-size: 512
-oauth2:
-  signature-verification:
-    public-key-endpoint-uri: http://plantycompareuaaserver/oauth/token_key
-    #ttl for public keys to verify JWT tokens (in ms)
-    ttl: 3600000
-    #max. rate at which public keys will be fetched (in ms)
-    public-key-refresh-rate-limit: 10000
-  web-client-configuration:
-    #keep in sync with UAA configuration
-    client-id: web_app
-    secret: changeit
 # ===================================================================
 # Application specific properties
 # Add your own application properties here, see the ApplicationProperties class
