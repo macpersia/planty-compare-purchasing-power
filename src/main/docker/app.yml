@@ -6,9 +6,9 @@ services:
       # Set by Hadi
       # - _JAVA_OPTIONS=-Xmx512m -Xms256m
       - _JAVA_OPTIONS=-Xmx256m -Xms128m
-      # Changed by Hadi
-      #- SPRING_PROFILES_ACTIVE=prod,swagger
-      - SPRING_PROFILES_ACTIVE=dev,swagger
+      ## Changed by Hadi
+      - SPRING_PROFILES_ACTIVE=prod,swagger
+      #- SPRING_PROFILES_ACTIVE=dev,swagger
       - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
       - SPRING_DATA_MONGODB_URI=mongodb://plantycomparepurchasingpower-mongodb:27017
       - SPRING_DATA_MONGODB_DATABASE=PlantyComparePurchasingPower
