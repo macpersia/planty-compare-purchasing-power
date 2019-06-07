@@ -2,7 +2,7 @@
 
 # Added by Hadi
 apk update && apk add bash util-linux openssl
-if [ -z "$JWT_SECRET_KEY" ]; then JWT_SECRET_KEY=$(openssl rand -base64 64 | tr '\n' -d); fi
+if [ -z "$JWT_SECRET_KEY" ]; then JWT_SECRET_KEY=$(openssl rand -base64 64 | tr -d '\n'); fi
 JAVA_OPTS="${JAVA_OPTS} -Djhipster.security.authentication.jwt.base64-secret=${JWT_SECRET_KEY}"
 #echo "The secret JWT key is ${JWT_SECRET_KEY:?'absent'}."
 
