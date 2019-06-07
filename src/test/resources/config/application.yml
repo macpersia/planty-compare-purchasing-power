@@ -23,15 +23,6 @@ eureka:
 spring:
   application:
     name: PlantyComparePurchasingPower
-  cloud:
-    stream:
-      kafka:
-        binder:
-          brokers: localhost
-          zk-nodes: localhost
-      bindings:
-        output:
-          destination: topic-jhipster
   data:
     mongodb:
       host: localhost

@@ -1,6 +1,7 @@
 package be.planty.compare.purchasingpower.web.rest;
 
 import be.planty.compare.purchasingpower.PlantyComparePurchasingPowerApp;
+import be.planty.compare.purchasingpower.config.SecurityBeanOverrideConfiguration;
 import be.planty.compare.purchasingpower.domain.PurchasingPower;
 import be.planty.compare.purchasingpower.repository.PurchasingPowerRepository;
 import be.planty.compare.purchasingpower.web.rest.errors.ExceptionTranslator;
@@ -29,7 +30,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@Link PurchasingPowerResource} REST controller.
  */
-@SpringBootTest(classes = PlantyComparePurchasingPowerApp.class)
+@SpringBootTest(classes = {SecurityBeanOverrideConfiguration.class, PlantyComparePurchasingPowerApp.class})
 public class PurchasingPowerResourceIT {
 
     private static final String DEFAULT_YEAR = "AAAAAAAAAA";

@@ -38,17 +38,6 @@ spring:
       enabled: false
     livereload:
       enabled: false
-  cloud:
-    stream:
-      kafka:
-        binder:
-          ## Changed by Hadi
-          brokers: localhost
-          #brokers: kafka
-          zk-nodes: localhost
-      bindings:
-        output:
-          destination: topic-jhipster
   data:
     mongodb:
       uri: mongodb://localhost:27017
